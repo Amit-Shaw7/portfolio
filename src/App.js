@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Toaster } from "react-hot-toast";
+import Navbar from "./layout/Navbar";
+import Home from "./pages/home/Home";
 
 function App() {
+  const [dark, setDark] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${dark === true ? "dark" : ""}`}>
+      <div className="dark:bg-black bg-white">
+        <Navbar dark={dark} setDark={setDark} />
+        <Home dark={dark}/>
+        <Toaster position="top-center"/>
+      </div>
     </div>
   );
 }
