@@ -9,7 +9,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const emailRequest = window.Email.send({
+            const emailRequest = await window.Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: process.env.REACT_APP_ELASTIC_MAIL_USERNAME,
                 Password: process.env.REACT_APP_ELASTIC_MAIL_PASSWORD,
