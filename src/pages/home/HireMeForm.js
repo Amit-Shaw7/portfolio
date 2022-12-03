@@ -10,9 +10,7 @@ const Login = () => {
         e.preventDefault();
         try {
             const emailRequest = await window.Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: process.env.REACT_APP_ELASTIC_MAIL_USERNAME,
-                Password: process.env.REACT_APP_ELASTIC_MAIL_PASSWORD,
+                SecureToken : "5da37f5d-33e4-4004-9d42-e054e0795362",
                 To: 'maahiamit777@gmail.com',
                 From: "amitkumar8017392@gmail.com",
                 Subject: `!!!Hiring Alert From ${org.current.value}`,
