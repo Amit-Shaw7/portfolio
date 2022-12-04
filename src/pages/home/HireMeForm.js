@@ -10,7 +10,7 @@ const Login = () => {
         e.preventDefault();
         try {
             const emailRequest = await window.Email.send({
-                SecureToken : process.env.REACT_APP_SMTP_SECRET_KEY,
+                SecureToken : process.env.REACT_APP_SMTP_SECRET_KEY.toString(),
                 To: 'maahiamit777@gmail.com',
                 From: "amitkumar8017392@gmail.com",
                 Subject: `!!!Hiring Alert From ${org.current.value}`,
