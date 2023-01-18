@@ -32,12 +32,12 @@ const About = () => {
                             visible === "edu"
                                 ?
                                 <span className='leading-loose'>I am a <strong>BCA</strong> graduate from  <strong>The Heritage Academy</strong>  , Kolkata which is affiliated to <strong>MAKAUT</strong> University. <br />
-                                    Batch : 2019-2022 <br/>with DGPA : <strong>9.0</strong>
+                                    Batch : 2019-2022 <br/>with CGPA : <strong>9.0</strong>
                                 </span>
                                 :
                                 <span className='leading-loose'>
-                                    As of now I am a fresher working on my skills and developing great projects.<br />
-                                    As well as eager to start working for an orgainisation and start a professional carrier.
+                                    Intern at "The Mango Jelly" .<br />
+                                    As well as eager to start working for any orgainisation as a full time and start a professional carrier.
                                 </span>
                         }
                     </div>
