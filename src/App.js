@@ -10,8 +10,8 @@ function App() {
     <div className={`${dark === true ? "dark" : ""}`}>
       <div className="dark:bg-black bg-white">
         <Navbar dark={dark} setDark={setDark} />
-        <Home dark={dark}/>
-        <Toaster position="top-center"/>
+        <Home dark={dark} />
+        <Toaster position="top-center" />
       </div>
     </div>
   );

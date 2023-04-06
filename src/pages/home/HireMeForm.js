@@ -29,7 +29,7 @@ const Login = () => {
     return (
         <div id='hire' className='min-h-[70vh] w-[100vw]  px-2 md:px-20'>
             <h1 className='text-3xl dark:text-white text-black text-center mt-20 underline decoration-red-500'>Hire Me</h1>
-            <p className="dark:text-red-400 text-red-600 text-sm text-center my-12">**Just provide your name , email so that i can contact you ASAP**</p>
+            <p className="dark:text-red-400 text-red-600 text-sm text-center my-12">**Enter your name , email so that i can contact you ASAP**</p>
             <form ref={formRef} onSubmit={handleSubmit} className=' m-auto flex items-center justify-around flex-col gap-4 w-full md:w-[40rem] p-8'>
 
                 <input ref={email} required type="email" className="dark:bg-slate-800 bg-slate-300 dark:text-white text-slate-700 font-bold rounded-md outline-none p-2 w-full" placeholder='Email' />
