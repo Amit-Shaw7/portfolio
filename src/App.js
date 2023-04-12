@@ -4,7 +4,7 @@ import Navbar from "./layout/Navbar";
 import Home from "./pages/home/Home";
 
 function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   return (
     <div className={`${dark === true ? "dark" : ""}`}>

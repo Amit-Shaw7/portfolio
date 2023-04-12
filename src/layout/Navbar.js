@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { MdDarkMode, MdMenu, MdClose, MdDownload } from 'react-icons/md';
+import { links } from '../mocks';
+
 
 const Navbar = ({ dark, setDark }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,24 +20,13 @@ const Navbar = ({ dark, setDark }) => {
 
             {/* Navbar links */}
             <div className={`custom-transition overflow-hidden ${menuOpen ? "absolute top-0 w-full dark:bg-slate-900 bg-[#b7b7b7] bg h-[80vh]" : "md:w-[55%] h-[60px]"}`}>
-
                 <ul className={`text-black md:flex dark:text-white hover:text-black h-[100%] font-medium items-center justify-around ${menuOpen ? "relative flex-col flex" : "flex-row hidden"}`}>
-
-                    <li onClick={() => setMenuOpen(false)} className='font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md hover:bg-red-500 text-sm lg:text-[1rem]'><button>Home</button></li>
-
-                    <li onClick={() => setMenuOpen(false)} className='font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md hover:bg-red-500 text-sm lg:text-[1rem] scroll-smooth'><a href='#about'>About</a></li>
-
-                    <li onClick={() => setMenuOpen(false)} className='font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md hover:bg-red-500 text-sm lg:text-[1rem] scroll-smooth'><a href='#skills'>Skills</a></li>
-
-                    <li onClick={() => setMenuOpen(false)} className='font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md hover:bg-red-500 text-sm lg:text-[1rem] scroll-smooth'><a href='#projects'>Projects</a></li>
-
-                    <li onClick={() => setMenuOpen(false)} className='font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md hover:bg-red-500 text-sm lg:text-[1rem] scroll-smooth'><a href='#contact'>Contact</a></li>
-
-                    <li onClick={() => { setMenuOpen(false); toggleMode() }} className='flex md:hidden font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md hover:bg-red-500 hover:text-black text-md text-black dark:text-white scroll-smooth'><button className='flex items-center'><MdDarkMode color={`${dark === true ? "white" : "black"}`} className='mx-1' />{dark ? "Light Mode" : "Dark Mode"}</button></li>
-
+                    {
+                        links?.map((item) => (
+                            <li onClick={() => setMenuOpen(false)} className='font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md hover:bg-red-500 text-sm lg:text-[1rem]'><a href={item?.link}>{item?.title}</a></li>
+                        ))
+                    }
                     <a download href="/amitKumarShawResume.pdf" onClick={() => setMenuOpen(!menuOpen)} className='flex md:hidden items-center font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md bg-red-500 hover:bg-transparent border-[1px] border-red-500 dark:text-black  text-md dark:hover:text-white hover:text-black scroll-smooth'><MdDownload /> &nbsp;&nbsp;Resume</a>
-
-                    {/* <li onClick={() => setMenuOpen(!menuOpen)} className='flex md:hidden font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md bg-red-500 hover:bg-transparent border-[1px] border-red-500 dark:text-black  text-md dark:hover:text-white hover:text-black scroll-smooth'><a href='#hire'>Hire Me</a></li> */}
                 </ul>
             </div>
 
