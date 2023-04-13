@@ -2,7 +2,7 @@ export const projectArr = [
     {
         id: 1,
         title: "MovieDB",
-        desc: "View all latest or trending Movies and Tv Shows with their details , also has a search feature for both Tv and Movies.",
+        desc: "A Fullstack webApp in which one can view all latest or trending Movies and Tv Shows with their details , also has a search feature for both Tv and Movies. If you like any add it to your favourite",
         img: "movie.png",
         skillUsed: ["react", "mui"],
         githubURL: "https://github.com/Amit-Shaw7?tab=repositories",
