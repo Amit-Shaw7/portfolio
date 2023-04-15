@@ -6,7 +6,7 @@ export const projectArr = [
         img: "movie.png",
         skillUsed: ["react", "mui"],
         githubURL: "https://github.com/Amit-Shaw7?tab=repositories",
-        siteURL: "https://this-is-a-movie-app.netlify.app/",
+        siteURL: "https://yourmoviedb.vercel.app/",
     },
     {
         id: 2,
