@@ -32,13 +32,13 @@ const Navbar = ({ dark, setDark }) => {
 
             {/* Buttons */}
             <div className='flex items-center'>
+                <button onClick={toggleMode} className='custom-transition hover:scale-125 mx-2 p-1 items-center justify-center'><MdDarkMode fontSize="1.2rem" color={`${dark === true ? "white" : "black"}`} /></button>
+                
                 <button onClick={() => setMenuOpen(!menuOpen)} className='relative z-10 flex  md:hidden mr-8 items-center justify-center'>
                     {
                         menuOpen ? <MdClose rotate="" fontSize="2rem" color={`${dark ? "white" : "black"}`} /> : <MdMenu fontSize="2rem" color={`${dark ? "white" : "black"}`} />
                     }
                 </button>
-
-                <button onClick={toggleMode} className='custom-transition hover:scale-125 mx-2 p-1 hidden md:flex items-center justify-center'><MdDarkMode fontSize="1.2rem" color={`${dark === true ? "white" : "black"}`} /></button>
 
                 <a href="/amitKumarShawResume.pdf" download className='hidden md:flex items-center mx-1 font-bold tracking-wider custom-transition cursor-pointer px-3 py-1 rounded-md border-[1px] border-red-500 bg-red-500 hover:bg-transparent text-black text-md dark:hover:text-white'><MdDownload /> &nbsp;Resume</a>
 
