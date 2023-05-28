@@ -25,6 +25,11 @@ export const skillArr = [
         img : "tailwind.png"
     },
     {
+        id : 15,
+        name : "Material UI",
+        img : "mui.png"
+    },
+    {
         id : 6,
         name : "STYLED COMPONENTS",
         img : "styled.png"
