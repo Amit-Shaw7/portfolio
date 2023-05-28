@@ -36,7 +36,7 @@ const About = () => {
                                 </span>
                                 :
                                 <span className='leading-loose'>
-                                    Intern at <strong>"The Mango Jelly"</strong> workiing on <strong>React Js</strong> with <strong>MUI</strong> and <strong>Redux Toolkit</strong> .<br />
+                                    Intern at <strong>"The Mango Jelly"</strong> working on <strong>React Js</strong> with <strong>MUI</strong> and <strong>Redux Toolkit</strong> .<br />
                                     As well as eager to start working for any orgainisation as a full time and start a professional career.
                                 </span>
                         }
