@@ -26,4 +26,13 @@ export const projectArr = [
         githubURL: "https://github.com/Amit-Shaw7?tab=repositories",
         siteURL: "https://pijja.vercel.app",
     },
+    {
+        id: 4,
+        title: "Kanban task management app",
+        desc: "Keep track of tasks in three stages 'Todo' , 'Doing' and 'Done'. Change their status when their status changes with a simple drag and drop. Toggle dark and light mode according to your need.",
+        img: "managet.jpg",
+        skillUsed: ["react", "tailwind", "nodejs", "express", "mongoDB"],
+        githubURL: "https://github.com/Amit-Shaw7/kanban-task-management",
+        siteURL: "https://managet.vercel.app",
+    },
 ]
