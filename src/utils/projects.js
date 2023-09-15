@@ -1,10 +1,19 @@
 export const projectArr = [
     {
+        id: 0,
+        title: "Fitthub",
+        desc: "A React web app where user can find exercises using names as well as muscle groups. It will show a beautiful gif explaining how to do it. Exercise details page with similar exercises and youtube video links for better understanding.",
+        img: "fitthub.jpg",
+        skillUsed: ["react", "mui"],
+        githubURL: "https://github.com/Amit-Shaw7/ExerciseiApp",
+        siteURL: "https://fitthub.vercel.app/",
+    },
+    {
         id: 1,
         title: "MovieDB",
         desc: "A Fullstack webApp in which one can view all latest or trending Movies and Tv Shows with their details , also has a search feature for both Tv and Movies. If you like any add it to your favourite",
         img: "movie.png",
-        skillUsed: ["react", "mui"],
+        skillUsed: ["react", "mui" , "nodejs", "express", "mongoDB"],
         githubURL: "https://github.com/Amit-Shaw7?tab=repositories",
         siteURL: "https://yourmoviedb.vercel.app/",
     },
