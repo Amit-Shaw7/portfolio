@@ -74,4 +74,9 @@ export const skillArr = [
         name : "Razorpay",
         img : "razorpay.png"
     },
+    {
+        id : 15,
+        name : "Next Js",
+        img : "nextJS.png"
+    },
 ]

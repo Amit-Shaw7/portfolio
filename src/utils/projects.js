@@ -1,6 +1,15 @@
 export const projectArr = [
     {
         id: 0,
+        title: "OriginAi",
+        desc: "A fullstack SAAS like Next app which uses AI models and act as a chat bot. It has some more feature like image generation , music generation , video generation and code generation. Integrated Crisp for customer support system.",
+        img: "originAi.png",
+        skillUsed: ["nextJS", "tailwind"],
+        githubURL: "https://github.com/Amit-Shaw7/saas-ai",
+        siteURL: "https://originai.vercel.app/",
+    },
+    {
+        id: 1,
         title: "Fitthub",
         desc: "A React web app where user can find exercises using names as well as muscle groups. It will show a beautiful gif explaining how to do it. Exercise details page with similar exercises and youtube video links for better understanding.",
         img: "fitthub.jpg",
@@ -9,7 +18,7 @@ export const projectArr = [
         siteURL: "https://fitthub.vercel.app/",
     },
     {
-        id: 1,
+        id: 2,
         title: "MovieDB",
         desc: "A Fullstack webApp in which one can view all latest or trending Movies and Tv Shows with their details , also has a search feature for both Tv and Movies. If you like any add it to your favourite",
         img: "movie.png",
@@ -18,7 +27,7 @@ export const projectArr = [
         siteURL: "https://yourmoviedb.vercel.app/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Youtube Clone",
         desc: "YouTube Clone with Google Login Feature. One can perform major tasks like - like , comment , subscribe , CRUD video etc.",
         img: "youtube.png",
@@ -27,7 +36,7 @@ export const projectArr = [
         siteURL: "https://connectube.vercel.app",
     },
     {
-        id: 3,
+        id: 4,
         title: "Pizza Ordering WebApp",
         desc: "Check out pzzas add it to your cart , order it and  pay via COD or Online using Razorpay. Also has a fully featured  Admin Dashboard",
         img: "pijja.png",
@@ -36,7 +45,7 @@ export const projectArr = [
         siteURL: "https://pijja.vercel.app",
     },
     {
-        id: 4,
+        id: 5,
         title: "Kanban task management app",
         desc: "Keep track of tasks in three stages 'Todo' , 'Doing' and 'Done'. Change their status when their status changes with a simple drag and drop. Toggle dark and light mode according to your need.",
         img: "managet.jpg",
